@@ -11,28 +11,31 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     </head>
     <body>
-        <nav>
-            <div class="container nav-content">
-
-                <a href="#home" class="brand">
-                    <img src="images/LOGO.png" alt="Chaitanya Charitamrit" class="site-logo">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="">
                 </a>
-
-                <div class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#offers">Offers</a>
-                    <a href="#services">Services</a>
-                    <a href="#brands">Brands</a>
-                    <a href="#products">Products</a>
-                    <!-- <a href="#gallery">Gallery</a> -->
-                    <a href="#contact">Contact</a>
-                </div>
-
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#offers">🔥 Offers</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#products">Products</a></li>
+                </ul>
+                <a href="#contact" class="nav-btn">Contact Us</a>
             </div>
         </nav>
 
         <section class="hero" id="home">
+            <div class="hero-slider">
+                <div class="slide active" style="background-image: url('hero/hero1.jpg');"></div>
+                <div class="slide" style="background-image: url('hero/hero2.jpg');"></div>
+                <div class="slide" style="background-image: url('hero/hero3.jpg');"></div>
+                <div class="slide" style="background-image: url('hero/hero4.jpg');"></div>
+            </div>
+
             <div class="floating-circle circle1"></div>
             <div class="floating-circle circle2"></div>
             <div class="floating-circle circle3"></div>
@@ -41,19 +44,27 @@
                     <div class="hero-tag">
                         ✦ Since 1996 • Premium Interior Solutions
                     </div>
-                    <h1>Transform Your Home<br>With <span>Timeless Luxury</span></h1>
+                    <h1>Transform Your Home<br>
+                        With <span>Timeless Luxury</span>
+                    </h1>
                     <p>Premium Curtains, Blinds, Wallpapers, Flooring &
                         Complete Home Furnishing Solutions.</p>
-                    <div class="trust-badge">
-                        ★ Trusted by 5000+ Happy Customers Across Punjab
-                    </div>
+                    <div class="trust-badge">★ Trusted by 5000+ Happy Customers Across Punjab.</div>
+
                     <div class="hero-button">
                         <a href="#products" class="btn">Explore Collection</a>
                         <a href="#contact" class="btn btn-outline">Book Consultation</a>
                     </div>
-                    <a href="https://wa.me/919216799667" class="whatsapp-btn"   target="_blank"><i class="fab fa-whatsapp"></i>Chat With Us on WhatsApp</a>
+
+                    <a href="https://wa.me/919216799667"
+                       class="whatsapp-btn"
+                       target="_blank">
+                       <i class="fab fa-whatsapp" style="font-size: 20px;"></i>
+                       Chat With Us on WhatsApp
+                    </a>
                 </div>
             </div>
+
         </section>
         <section id="about" class="about">
 
@@ -61,7 +72,7 @@
                 
                 <div class="section-title" data-aos="fade-down"     data-aos-duration="1100">
                     <h2>About Chaitanya Charitamrit</h2>
-                    <p>Crafting Beautiful Spaces Since 1996</p>
+                    <p>Beautiful Crafting Your Spaces Since 1996</p>
                 </div>
 
                 <div class="about-content">
@@ -74,13 +85,15 @@
 
                         <h3>Your Trusted Home Furnishing Destination</h3>
 
-                        <p>Established in 1996, Chaitanya Charitamrit has become one of the most trusted names in premium home furnishing and interior décor solutions. With decades of experience, we specialize in transforming residential and commercial spaces through carefully curated collections of curtains, blinds, wallpapers, flooring, upholstery, bedding, and decorative furnishings.</p>
+                        <p>Since 1996, Chaitanya Charitamrit has been a trusted destination for premium home furnishing and interior décor solutions, helping transform ordinary spaces into elegant and inspiring environments. With nearly three decades of expertise, we have built a reputation for delivering exceptional quality, timeless designs, and personalized service to homeowners, businesses, and interior enthusiasts alike.</p>
 
-                        <p>Our mission is to combine timeless craftsmanship with modern design trends to create spaces that reflect elegance, comfort, and individuality. Every product is selected with attention to quality, durability, and aesthetics, ensuring that our customers receive only the finest furnishing solutions.</p>
+                        <p>We offer a carefully curated range of curtains, blinds, wallpapers, flooring, upholstery, bedding, and decorative furnishings that blend sophistication with functionality. Every product in our collection is selected with a strong focus on craftsmanship, durability, comfort, and aesthetic appeal, ensuring lasting value for our customers.</p>
 
-                        <p>Over the years, we have successfully completed thousands of projects for homes, offices, hotels, and commercial establishments. Our experienced team provides personalized consultation, precise measurements, professional installation, and dedicated after-sales support</p>
+                        <p>Our philosophy goes beyond simply furnishing spaces—we believe in creating environments that reflect personality, style, and purpose. By combining traditional craftsmanship with contemporary design trends, we help our clients achieve interiors that are both visually stunning and practical for everyday living.</p>
 
-                        <p>At Chaitanya Charitamrit, we believe that every space tells a story. Our goal is to help you create interiors that are stylish, functional, and truly inspiring.</p>
+                        <p>Over the years, we have successfully completed thousands of residential and commercial projects, including homes, offices, hotels, and retail spaces. From personalized consultations and precise measurements to professional installation and dedicated after-sales support, our experienced team ensures a seamless experience at every stage of the journey.</p>
+
+                        <p>At Chaitanya Charitamrit, every space tells a unique story. Our commitment is to bring your vision to life through thoughtfully designed furnishing solutions that elevate comfort, enhance beauty, and create a lasting impression for years to come.</p>
 
                         <div class="about-stats">
 
@@ -118,31 +131,54 @@
 
                 <div class="offers-grid">
 
-                    <div class="offer-card" data-aos="flip-left">
-                        <div class="discount-badge">20% OFF</div>
-                        <h3>Premium Bedding Collection</h3>
-                        <p>Purchase any 2 branded bedsheets and receive an instant 20% discount on MRP.</p>
-                        <a href="#contact" class="offer-btn">
-                            Claim Offer
-                        </a>
+                    <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
+
+                        <span class="offer-badge">20% OFF</span>
+                        <div class="offer-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>Buy 2 & Save 20%</h3>
+                        <div class="offer-divider">
+                            <span></span>
+                            <i class="fas fa-star"></i>
+                            <span></span>
+                        </div>
+                        <p>Purchase any 2 branded bedsheets and receive
+                            an instant 20% discount on MRP.</p>
+                        <a href="#" class="offer-btn">Claim Offer</a>
                     </div>
 
-                    <div class="offer-card featured-offer" data-aos="zoom-in">
-                        <div class="discount-badge">25% OFF</div>
-                        <h3>Luxury Bedsheet Offer</h3>
-                        <p>Buy any 4 branded bedsheets and enjoy an exclusive 25% discount on MRP.</p>
-                        <a href="#contact" class="offer-btn">
-                            Learn More
-                        </a>
+                    <div class="offer-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <span class="offer-badge">25% OFF</span>
+                        <div class="offer-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>Buy 4 & Save 25%</h3>
+                        <div class="offer-divider">
+                            <span></span>
+                            <i class="fas fa-star"></i>
+                            <span></span>
+                        </div>
+                        <p>Buy any 4 branded bedsheets and enjoy an
+                            exclusive 25% discount on MRP.</p>
+                        <a href="#" class="offer-btn">Learn More</a>
                     </div>
 
-                    <div class="offer-card" data-aos="flip-left">
-                        <div class="discount-badge">FREE</div>
+                    <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="offer-badge">FREE</span>
+                        <div class="offer-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
                         <h3>Available on Video Call</h3>
-                        <p>Get expert furnishing consultation, product selection assistance and interior guidance from the comfort of your home through video call.</p>
-                        <a href="#contact" class="offer-btn">
-                            Schedule Call
-                        </a>
+                        <div class="offer-divider">
+                            <span></span>
+                            <i class="fas fa-star"></i>
+                            <span></span>
+                        </div>
+                        <p>Get expert furnishing consultation,
+                            product selection guidance and interior
+                            styling advice from the comfort of your home.</p>
+                        <a href="#" class="offer-btn">Schedule Call</a>
                     </div>
                 </div>
             </div>
@@ -156,35 +192,28 @@
                 </div>
 
                 <div class="services-grid">
-
-                    <div class="service-card" data-aos="fade-up">
-                        <i class="fas fa-ruler-combined"></i>
-                        <h3>Free Consultation</h3>
-                        <p>Expert guidance to help you choose the perfect furnishings and décor solutions.</p>
-                    </div>
-
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fas fa-home"></i>
-                        <h3>Home Measurement</h3>
-                        <p>Accurate site visits and measurements for curtains, blinds, wallpapers and flooring.</p>
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Interior Styling</h3>
+                        <p>Professional recommendations to enhance the beauty and functionality of your space and choice.</p>
                     </div>
 
                     <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <h3>Interior Styling</h3>
-                        <p>Professional recommendations to enhance the beauty and functionality of your space.</p>
+                        <i class="fas fa-couch"></i>
+                        <h3>Custom Furnishing Solutions</h3>
+                        <p>Tailor-made curtains, Blinds, Mats and décor to suit your style.</p>
                     </div>
 
                     <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-home"></i>
+                        <h3>Home Measurement</h3>
+                        <p>Accurate measurements and expert guidance for curtains, blinds, wallpapers, flooring, and more.</p>
+                    </div>                    
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                         <i class="fas fa-tools"></i>
                         <h3>Professional Installation</h3>
                         <p>Skilled installation for curtains, blinds, wallpapers, flooring and furnishings.</p>
-                    </div>
-
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                        <i class="fas fa-couch"></i>
-                        <h3>Custom Furnishing Solutions</h3>
-                        <p>Tailor-made curtains, upholstery, bedding and décor to suit your style.</p>
                     </div>
 
                     <div class="service-card" data-aos="fade-up" data-aos-delay="500">
@@ -198,8 +227,8 @@
         <section class="how-it-works section">
             <div class="container">
                 <div class="section-title" data-aos="fade-down"     data-aos-duration="1100">
-                    <h2>How It Works</h2>
-                    <p>Simple, Hassle-Free Process From Consultation To Installation</p>
+                    <h2>The Journey to Your Dream Space</h2>
+                    <p>From personalized design consultation to flawless installation, we make transforming your space simple, seamless, and stress-free.</p>
                 </div>
                 <div class="steps-wrapper">
                     <div class="process-line"></div>
@@ -241,7 +270,7 @@
 
                 <div class="section-title" data-aos="fade-down"     data-aos-duration="1100">
                     <h2>Our Trusted Brands</h2>
-                    <p>We work with leading furnishing and interior brands to bring the finest quality products to your home.</p>
+                    <p>We work with leading furnishing and interior brands to bring the finest quality products to your space.</p>
                 </div>
 
                 <div class="brands-slider">
@@ -878,6 +907,25 @@
 
             });
           
+         // Hero Image Scroller
+            const slides = document.querySelectorAll('.slide');
+
+            let currentSlide = 0;
+
+            setInterval(() => {
+
+                slides[currentSlide].classList.remove('active');
+
+                currentSlide++;
+
+                if(currentSlide >= slides.length){
+                    currentSlide = 0;
+                }
+
+                slides[currentSlide].classList.add('active');
+
+            }, 5000);
+
            // why us section
 
             document.addEventListener("DOMContentLoaded", () => {
