@@ -22,7 +22,7 @@
                     <li><a href="#offers">🔥 Offers</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#brands">Brands</a></li>
-                    <li><a href="#products">Products</a></li>
+                    <li><a href="#new-arrivals">Products</a></li>
                 </ul>
                 <a href="#contact" class="nav-btn">Contact Us</a>
             </div>
@@ -347,6 +347,70 @@
                         <img src="images/king.png" alt="Mush" style="max-width:195px; max-height:155px;">
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <section class="new-arrivals" id="new-arrivals">
+            <div class="section-title">
+                <span class="section-tag">LATEST COLLECTION</span>
+                <h2>New Arrivals</h2>
+                <p>Explore our latest products and installation showcases.</p>
+            </div>
+
+            <div class="arrival-wrapper">
+
+                <!-- Product Slider -->
+                <div class="arrival-card">
+
+                    <div class="slider-container">
+
+                        <button class="arrow left" onclick="prevProduct()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <img id="productImage"
+                            src="arrival/wallpaper.jpg">
+                        <button class="arrow right" onclick="nextProduct()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="arrival-content">
+                        <span class="arrival-label">NEW ARRIVAL</span>
+                        <h3 id="productTitle">Premium Blinds</h3>
+                        <div class="arrival-divider">
+                            <span></span>
+                            <i class="fas fa-star"></i>
+                            <span></span>
+                        </div>
+                       <p id="productDescription">Stylish blinds designed to bring elegance,privacy and functionality to modern living spaces.</p>
+                    </div>
+                </div>
+
+                <!-- Video Slider -->
+                <div class="arrival-card">
+                    <div class="slider-container">
+                        <button class="arrow left" onclick="prevVideo()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <video id="arrivalVideo" controls autoplay muted loop>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                        </video>
+                        <button class="arrow right" onclick="nextVideo()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="arrival-content">
+                        <span class="arrival-label">INSTALLATION</span>
+                        <h3 id="videoTitle">Curtain Installation</h3>
+                        <div class="arrival-divider">
+                            <span></span>
+                            <i class="fas fa-star"></i>
+                            <span></span>
+                        </div>
+                        <p id="videoDescription">Watch our experts transform interiors with precise measurements, seamless fitting, and premium finishing.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -925,6 +989,90 @@
                 slides[currentSlide].classList.add('active');
 
             }, 5000);
+
+            // New Arrival section
+            const products = [
+            {
+                image:"arrival/blind.jpg",
+                title:"Premium Blinds",
+                description:"Stylish blinds designed to bring,privacy and to modern living spaces."
+            },
+            {
+                image:"images/product1.jpg",
+                title:"Luxury Blinds Collection",
+                description:"Elegant blinds crafted to enhance privacy, light control and modern interior aesthetics."
+            },
+            {
+                image:"arrival/wallpaper.jpg",
+                title:"Designer Wallpapers",
+                description:"Transform ordinary walls into statement pieces with premium textures and luxury patterns."
+            },
+            {
+                image:"images/product3.jpg",
+                title:"Premium Bedding Collection",
+                description:"Experience unmatched comfort with luxurious bedding designed for modern homes."
+            }
+            ];
+
+            let productIndex = 0;
+            function updateProduct(){
+                document.getElementById("productImage").src =
+                products[productIndex].image;
+                document.getElementById("productTitle").innerText =
+                products[productIndex].title;
+                document.getElementById("productDescription").innerText =
+                products[productIndex].description;
+            }
+            function nextProduct(){
+                productIndex = (productIndex + 1) % products.length;
+                updateProduct();
+            }
+            function prevProduct(){
+                productIndex =
+                (productIndex - 1 + products.length) % products.length;
+                updateProduct();
+            }
+
+            
+            const videos = [
+            {
+                video:"videos/video1.mp4",
+                title:"Expert Curtain Installation",
+                description:"Watch our specialists deliver flawless curtain installation with perfect finishing."
+            },
+            {
+                video:"videos/video2.mp4",
+                title:"Wallpaper Transformation",
+                description:"See how premium wallpapers instantly elevate interiors with elegance and character."
+            },
+            {
+                video:"videos/video3.mp4",
+                title:"Luxury Blind Fitting",
+                description:"Professional blind installation ensuring precise alignment and smooth operation."
+            }
+            ];
+
+            let videoIndex = 0;
+            function updateVideo(){
+                const video =
+                document.getElementById("arrivalVideo");
+                video.src =
+                videos[videoIndex].video;
+                video.load();
+                document.getElementById("videoTitle").innerText =
+                videos[videoIndex].title;
+                document.getElementById("videoDescription").innerText =
+                videos[videoIndex].description;
+            }
+            function nextVideo(){
+                videoIndex = (videoIndex + 1) % videos.length;
+                updateVideo();
+            }
+            function prevVideo(){
+                videoIndex =
+                (videoIndex - 1 + videos.length) % videos.length;
+                updateVideo();
+            }
 
            // why us section
 
