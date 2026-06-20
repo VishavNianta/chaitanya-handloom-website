@@ -924,7 +924,7 @@ font-family: 'Cormorant Garamond', serif;
     transform:scale(1.1);
 }
 
-/* products */
+/* section title */
 
 section{
     padding:90px 0;
@@ -991,6 +991,176 @@ section{
 
 .section-title:hover h2{
     letter-spacing:2px;
+}
+
+/* New Arrivals */
+
+.new-arrivals{
+    padding:100px 40px;
+    background:#faf8f4;
+}
+
+.arrival-card{
+    transition:.4s ease;
+     width:100%;
+    max-width:560px;
+    margin:0 auto;
+
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.arrival-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.arrival-card:hover h3{
+    color:#c8a96a;
+}
+.arrival-wrapper{
+    max-width:1200px;  
+    margin:0 auto;     
+    padding:0 20px;    
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.slider-container{
+    position:relative;
+    height:320px; /* was 400px+ */
+    overflow:hidden;
+}
+
+.slider-container img,
+.slider-container video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#c8a96a;
+    color:white;
+    cursor:pointer;
+    z-index:5;
+    transition:.3s;
+}
+
+.arrow:hover{
+    background:#a98949;
+}
+
+.left{
+    left:20px;
+}
+
+.right{
+    right:20px;
+}
+
+.arrival-content{
+    padding:40px 30px;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.arrival-label{
+    display:block;
+    width:100%;
+    text-align:center;
+
+    color:#c8a96a;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+
+    margin-bottom:10px;
+}
+
+.arrival-content h3{
+    font-family:'Playfair Display', serif;
+    font-size:2rem;
+    font-weight:700;
+    color:#111;
+
+    line-height:1.2;
+    text-align:center;
+
+    margin-bottom:15px;
+
+    display:block;
+    width:100%;
+}
+
+.arrival-content h3::after{
+    display:none;
+}
+.arrival-content p{
+    font-size:1rem;
+    line-height:1.8;
+    color:#666;
+    max-width:420px;
+    margin:0 auto;
+    text-align: center;
+}
+
+@media(max-width:992px){
+
+    .arrival-wrapper{
+        grid-template-columns:1fr;
+    }
+
+}
+
+.arrival-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:22px;
+}
+
+.arrival-divider span{
+    width:80px;
+    height:1px;
+    background:linear-gradient(
+        to right,
+        transparent,
+        #c8a96a,
+        transparent
+    );
+}
+
+.arrival-divider i{
+    color:#c8a96a;
+    font-size:14px;
+}
+
+.arrival-label{
+    display:inline-block;
+    color:#c8a96a;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:12px;
 }
 
 /* collections */
