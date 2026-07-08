@@ -24,7 +24,7 @@ h1,h2,h3{
 /* section title */
 
 section{
-    padding:90px 8%;
+    padding:90px 8px;
 }
 
 .section-title{
