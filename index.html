@@ -204,300 +204,329 @@
 
         
 
-        <section class="new-arrivals" id="new-arrivals">
-            <div class="section-title">
-                <span class="section-tag">LATEST COLLECTION</span>
-                <h2>New Arrivals</h2>
-                <p>Explore our latest products and installation showcases.</p>
+        <section class="arrival-section">
+            <div class="section-title" data-aos="fade-down" data-aos-duration="1100">
+                <h2>Featured Collection</h2>
+                <p>Discover our latest premium furnishings, thoughtfully curated to bring elegance, comfort and timeless style to every space.</p>
             </div>
-
-            <div class="arrival-wrapper">
-
-                <!-- Product Slider -->
-                <div class="arrival-card">
-
-                    <div class="slider-container">
-
-                        <button class="arrow left" onclick="prevProduct()">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <img id="productImage"
-                            src="arrival/blinds.jpg">
-                        <button class="arrow right" onclick="nextProduct()">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+            <div class="arrival-slider">
+                <!-- Slide 1 -->
+                <div class="arrival-slide active">
+                    <div class="arrival-image">
+                        <img src="arrival/blinds.jpg" alt="Premium Blinds">
                     </div>
-
                     <div class="arrival-content">
-                        <span class="arrival-label">NEW ARRIVAL</span>
-                        <h3 id="productTitle">Premium Blinds</h3>
-                        <div class="arrival-divider">
-                            <span></span>
-                            <i class="fas fa-star"></i>
-                            <span></span>
-                        </div>
-                       <p id="productDescription">Stylish blinds designed to bring elegance,privacy and functionality to modern living spaces.</p>
+                        <span class="arrival-tag">FEATURED COLLECTION</span>
+                        <h2>Premium Blinds</h2>
+                        <div class="arrival-divider"></div>
+                        <p>
+                            Discover Roller, Zebra, Roman and Motorized
+                            Blinds crafted to provide privacy, elegance
+                            and effortless light control.
+                        </p>
+                        <ul class="arrival-features">
+                            <li>Premium Materials</li>
+                            <li>Customized Sizes</li>
+                            <li>Professional Installation</li>
+                            <li>100+ Designs Available</li>
+                        </ul>
+                        <a href="blinds.html" class="arrival-btn">
+                            Explore Collection
+                        </a>
                     </div>
                 </div>
-
-                <!-- Video Slider -->
-                <div class="arrival-card">
-                    <div class="slider-container">
-                        <button class="arrow left" onclick="prevVideo()">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <video id="arrivalVideo" controls autoplay muted loop>
-                            <source src="videos/video1.mp4" type="video/mp4">
-                        </video>
-                        <button class="arrow right" onclick="nextVideo()">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+                <!-- Slide 2 -->
+                <div class="arrival-slide">
+                    <div class="arrival-image">
+                        <img src="arrival/wallpaper.jpg" alt="">
                     </div>
-
                     <div class="arrival-content">
-                        <span class="arrival-label">INSTALLATION</span>
-                        <h3 id="videoTitle">Curtain Installation</h3>
-                        <div class="arrival-divider">
-                            <span></span>
-                            <i class="fas fa-star"></i>
-                            <span></span>
-                        </div>
-                        <p id="videoDescription">Watch our experts transform interiors with precise measurements, seamless fitting, and premium finishing.</p>
+                        <span class="arrival-tag">
+                            FEATURED COLLECTION
+                        </span>
+                        <h2>Luxury Wallpapers</h2>
+                        <div class="arrival-divider"></div>
+                        <p>
+                            Transform your walls with elegant designer
+                            wallpapers inspired by modern and timeless
+                            interiors.
+                        </p>
+                        <ul class="arrival-features">
+                            <li>Premium Textures</li>
+                            <li>Imported Designs</li>
+                            <li>Custom Installation</li>
+                            <li>500+ Patterns</li>
+                        </ul>
+                        <a href="wallpaper.html" class="arrival-btn">
+                            Explore Collection
+                        </a>
                     </div>
                 </div>
+            </div>
+            <button class="arrival-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrival-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="arrival-dots">
+                <span class="active"></span>
+                <span></span>
             </div>
         </section>
 
-        <section class="testimonials-section">
+        <!--=========================================
+                PREMIUM COLLECTION
+        ==========================================-->
 
+        <section class="collection-section">
             <div class="container">
-
-                <div class="section-title" data-aos="fade-down"     data-aos-duration="1100">
-                    <h2>What Our Clients Say</h2>
-                    <p>Trusted by Hundreds of Happy Customers</p>
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Our Premium Collection</h2>
+                    <p>
+                        Explore our carefully curated home furnishing collections designed
+                        to bring elegance, comfort and timeless style to every space.
+                    </p>
                 </div>
 
-                <div class="testimonials">
+                <div class="collection-grid">
 
+                    <a href="curtains.html" class="collection-card" data-aos="fade-up">
+                        <img src="collections/curtain.jpg" alt="">
+                        <div class="collection-content">
+                            <h3>Curtains</h3>
+                            <p>Luxury Fabrics & Designer Styles</p>
+                            <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="blinds.html" class="collection-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="collections/blinds.jpg" alt="">
+                        <div class="collection-content">
+                            <h3>Blinds</h3>
+                            <p>Modern Window Solutions</p>
+                            <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="wallpaper.html" class="collection-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="collections/wallpaper.jpg" alt="">
+                        <div class="collection-content">
+                            <h3>Wallpapers</h3>
+                            <p>Designer Wall Coverings</p>
+                            <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="bedsheets.html" class="collection-card" data-aos="fade-up">
+                        <img src="collections/bedsheets.jpg" alt="">
+                        <div class="collection-content">
+                            <h3>Bedsheets</h3>
+                            <p>Premium Bedding Collection</p>
+                            <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="upholstery.html" class="collection-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="collections/sofa.jpg" alt="">
+                        <div class="collection-content">
+                            <h3>Upholstery</h3>
+                            <p>Luxury Sofa Fabrics</p>
+                            <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="mattress.html" class="collection-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="collections/mattress.jpg" alt="">
+                        <div class="collection-content">
+                            <h3>Mattresses</h3>
+                            <p>Sleep Better Every Night</p>
+                            <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="collection-btn">
+
+                    <a href="products.html" class="premium-btn">
+                        Explore Complete Collection
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section class="testimonial-section">
+            <div class="section-title" data-aos="fade-down" data-aos-duration="1100">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by homeowners and businesses for premium quality, elegant designs and exceptional service.</p>
+            </div>
+            <div class="testimonial-slider">
+                <button class="testimonial-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-track">
                     <div class="testimonial-card" data-aos="fade-up">
-
-                        <div class="client-header">
-
-                            <div class="client-avatar">
-                                <i class="fas fa-user"></i>
+                            <div class="client-header">
+                                <div class="client-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4>Rahul Sharma</h4>
+                                    <span>Homeowner - Bathinda</span>
+                                </div>
                             </div>
-
-                            <div>
-                                <h4>Rahul Sharma</h4>
-                                <span>Homeowner - Bathinda</span>
+                            <div class="stars">
+                                ★★★★★
                             </div>
-
+                            <p>Amazing quality curtains and excellent installation service. The team helped us transform our living room beautifully.</p>
+                        </div>
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="client-header">
+                                <div class="client-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4>Priya Verma</h4>
+                                    <span>Interior Design Client</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                            <p>Professional staff and premium furnishing products. The wallpaper collection is absolutely stunning.</p>
                         </div>
 
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-
-                        <p>
-                            Amazing quality curtains and excellent installation service.
-                            The team helped us transform our living room beautifully.
-                        </p>
-
-                    </div>
-
-                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-
-                        <div class="client-header">
-
-                            <div class="client-avatar">
-                                <i class="fas fa-user"></i>
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="client-header">
+                                <div class="client-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4>Amit Gupta</h4>
+                                    <span>Commercial Project Client</span>
+                                </div>
                             </div>
-
-                            <div>
-                                <h4>Priya Verma</h4>
-                                <span>Interior Design Client</span>
+                            <div class="stars">
+                                ★★★★★
                             </div>
-
+                            <p>Beautiful collection, timely delivery, and great support.Highly recommended for premium home furnishings.</p>
                         </div>
-
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-
-                        <p>
-                            Professional staff and premium furnishing products.
-                            The wallpaper collection is absolutely stunning.
-                        </p>
-
-                    </div>
-
-                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
-
-                        <div class="client-header">
-
-                            <div class="client-avatar">
-                                <i class="fas fa-user"></i>
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="client-header">
+                                <div class="client-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4>Neha Arora</h4>
+                                    <span>Home Interior Client</span>
+                                </div>
                             </div>
-
-                            <div>
-                                <h4>Amit Gupta</h4>
-                                <span>Commercial Project Client</span>
+                            <div class="stars">
+                                ★★★★
                             </div>
-
+                            <p>Excellent service from consultation to installation. The curtains and blinds perfectly complemented our home, and the team was extremely professional.</p>
                         </div>
-
-                        <div class="stars">
-                            ★★★★★
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="client-header">
+                                <div class="client-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4>Karan Mehta</h4>
+                                    <span>Villa Owner</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                            <p>We purchased wallpapers, upholstery and custom curtains.Every product exceeded our expectations and completely transformed our interiors.</p>
                         </div>
-
-                        <p>Beautiful collection, timely delivery, and great support.
-                            Highly recommended for premium home furnishings.</p>
-
-                    </div>
-
                 </div>
-
+                <button class="testimonial-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
-
         </section>
 
-        <section class="contact-showcase" id="contact">
 
+        <!-- ===============================
+                CONTACT / ENQUIRY
+        ================================ -->
+
+        <section class="contact-section" id="contact">
             <div class="container">
-
-                <div class="section-title">
-                    <h2>Visit Us or <span>Enquire Now</span></h2>
-                    <div class="gold-line"></div>
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Let's Create Your Dream Space</h2>
+                    <p>Share your requirements and our experts will help you find the perfect furnishing solution for your home or workspace.</p>
                 </div>
-
-                <div class="contact-wrapper">
-
-                    <!-- Left Side -->
-                    <div class="contact-info">
-
-                        <div class="info-card">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>STORE ADDRESS</h4>
-                                <p>
-                                    Opp. Petrol Pump, Hanuman Chowk<br>
-                                    G.T. Road, Bathinda, Punjab – 151001
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="info-card">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>PHONE / WHATSAPP</h4>
-                                <p>+91 92167 99667</p>
-                            </div>
-                        </div>
-
-                        <div class="info-card">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>EMAIL ADDRESS</h4>
-                                <p>shachi11chaitanya@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="info-card working-hours-card">
-
-                            <div class="working-header">
-
-                                <div class="working-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-
-                                <h4>WORKING HOURS</h4>
-
-                            </div>
-
-                            <div class="working-schedule">
-
-                                <div class="schedule-row">
-                                    <span>Tuesday – Sunday</span>
-                                    <span class="time">10:00 AM – 8:15 PM</span>
-                                </div>
-
-                                <div class="divider"></div>
-
-                                <div class="schedule-row">
-                                    <span>Monday</span>
-                                    <span class="closed">10:00 AM – 2:00 PM</span>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <!-- MAP -->
-                        <div class="map-box">
-
-                            <iframe src="https://www.google.com/maps?q=Chaitanya+Handloom+Bathinda&output=embed"
-                            width="100%"
-                            height="350"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy">
-                            </iframe>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Right Side -->
-                    <div class="enquiry-box">
-
+                <div class="contact-wrapper" data-aos="zoom-in">
+                    <form class="contact-form">
                         <h3>Send an Enquiry</h3>
-                        <p>We'll respond quickly via WhatsApp.</p>
-
-                        <form>
-                            <label> Your Name </label>
-                            <input
-                            type="text"
-                            placeholder="Your Name">
-
-                            <label> Phone Number </label>
-                            <input
-                            type="tel"
-                            placeholder="Phone Number">
-
-                            <label> I am Interested in.. </label>
-                            <select>
-                                <option>Select Product / Service</option>
-                                <option>Luxury Curtains</option>
+                        <p class="form-subtitle">
+                            We'll get back to you as soon as possible.
+                        </p>
+                        <div class="input-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Interested In</label>
+                            <select required>
+                                <option value="">Select Product / Service</option>
+                                <option>Curtains</option>
                                 <option>Blinds</option>
-                                <option>Wallpaper</option>
+                                <option>Wallpapers</option>
+                                <option>Mattresses</option>
+                                <option>Bedsheets</option>
+                                <option>Towels</option>
                                 <option>Flooring</option>
-                                <option>Bedding</option>
+                                <option>Carpets & Rugs</option>
+                                <option>Upholstery</option>
+                                <option>Wedding Collection</option>
+                                <option>Gift Items</option>
+                                <option>Other</option>
                             </select>
+                        </div>
 
-                            <label style="size: 15px; margin-bottom: 15px;"> Message </label>
+                        <div class="input-group">
+                            <label>Your Message</label>
                             <textarea rows="5" placeholder="Tell us about your requirements..."></textarea>
+                        </div>
 
-                            <button type="submit">
-                                <i class="fab fa-whatsapp"></i>
-                                Send Enquiry
-                            </button>
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Send Enquiry on WhatsApp
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info-bottom">
 
-                        </form>
-
+                    <div class="info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Bathinda, Punjab</span>
                     </div>
 
+                    <div class="info-box">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Monday | 10:00 AM - 2:00 PM</span>
+                        <span>Tue - Sun | 10:00 AM - 8:15 PM</span>
+                    </div>
                 </div>
-
             </div>
-
         </section>
 
         <footer class="premium-footer">
-
             <div class="container">
-
                 <div class="footer-grid">
-
                     <!-- Brand Info -->
                     <div class="footer-column">
                         <div class="footer-brand">
@@ -526,16 +555,12 @@
                             <a href="https://wa.me/919216799661" target="_blank">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
-
                         </div>
-
                     </div>
 
                     <!-- Products -->
                     <div class="footer-column">
-
                         <h3>Our Products</h3>
-
                         <ul>
                             <li><a href="#">Luxury Curtains</a></li>
                             <li><a href="#">Designer Wallpapers</a></li>
@@ -544,14 +569,10 @@
                             <li><a href="#">Bedsheets & Bedding</a></li>
                             <li><a href="#">Carpets & Rugs</a></li>
                         </ul>
-
                     </div>
-
                     <!-- Services -->
                     <div class="footer-column">
-
                         <h3>Services</h3>
-
                         <ul>
                             <li><a href="#">Free Consultation</a></li>
                             <li><a href="#">Home Measurement</a></li>
@@ -640,88 +661,39 @@
             }, 5000);
 
             // New Arrival section
-            const products = [
-            {
-                image:"arrival/blinds.jpg",
-                title:"Premium Blinds",
-                description:"Stylish blinds designed to bring,privacy and to modern living spaces."
-            },
-            {
-                image:"arrival/blinds2.jpg",
-                title:"Luxury Blinds Collection",
-                description:"Elegant blinds crafted to enhance privacy, light control and modern interior aesthetics."
-            },
-            {
-                image:"arrival/wallpaper.jpg",
-                title:"Designer Wallpapers",
-                description:"Transform ordinary walls into statement pieces with premium textures and luxury patterns."
-            },
-            {
-                image:"arrival/bedsheets.jpg",
-                title:"Premium Bedding Collection",
-                description:"Experience unmatched comfort with luxurious bedding designed for modern homes."
+           
+            const arrivalSlides = document.querySelectorAll(".arrival-slide");
+            const arrivalDots = document.querySelectorAll(".arrival-dots span");
+            let currentArrival = 0;
+            function showArrival(index){
+                arrivalSlides.forEach(slide =>
+                    slide.classList.remove("active")
+                );
+                arrivalDots.forEach(dot =>
+                    dot.classList.remove("active")
+                );
+                arrivalSlides[index].classList.add("active");
+                arrivalDots[index].classList.add("active");
             }
-            ];
+            document.querySelector(".arrival-next").onclick = () => {
+                currentArrival =
+                    (currentArrival + 1) % arrivalSlides.length;
+                showArrival(currentArrival);
+            };
+            document.querySelector(".arrival-prev").onclick = () => {
+                currentArrival =
+                    (currentArrival - 1 + arrivalSlides.length)
+                    % arrivalSlides.length;
 
-            let productIndex = 0;
-            function updateProduct(){
-                document.getElementById("productImage").src =
-                products[productIndex].image;
-                document.getElementById("productTitle").innerText =
-                products[productIndex].title;
-                document.getElementById("productDescription").innerText =
-                products[productIndex].description;
-            }
-            function nextProduct(){
-                productIndex = (productIndex + 1) % products.length;
-                updateProduct();
-            }
-            function prevProduct(){
-                productIndex =
-                (productIndex - 1 + products.length) % products.length;
-                updateProduct();
-            }
+                showArrival(currentArrival);
+            };
+            arrivalDots.forEach((dot,index)=>{
+                dot.onclick=()=>{
+                    currentArrival=index;
+                    showArrival(currentArrival);
+                };
+            });
 
-            
-            const videos = [
-            {
-                video:"videos/video1.mp4",
-                title:"Expert Curtain Installation",
-                description:"Watch our specialists deliver flawless curtain installation with perfect finishing."
-            },
-            {
-                video:"videos/video2.mp4",
-                title:"Wallpaper Transformation",
-                description:"See how premium wallpapers instantly elevate interiors with elegance and character."
-            },
-            {
-                video:"videos/video3.mp4",
-                title:"Luxury Blind Fitting",
-                description:"Professional blind installation ensuring precise alignment and smooth operation."
-            }
-            ];
-
-            let videoIndex = 0;
-            function updateVideo(){
-                const video =
-                document.getElementById("arrivalVideo");
-                video.src =
-                videos[videoIndex].video;
-                video.load();
-                document.getElementById("videoTitle").innerText =
-                videos[videoIndex].title;
-                document.getElementById("videoDescription").innerText =
-                videos[videoIndex].description;
-            }
-            function nextVideo(){
-                videoIndex = (videoIndex + 1) % videos.length;
-                updateVideo();
-            }
-            function prevVideo(){
-                videoIndex =
-                (videoIndex - 1 + videos.length) % videos.length;
-                updateVideo();
-            }
 
            // why us section
 
@@ -771,7 +743,164 @@
             });
             document.querySelector("nav").classList.add("scrolled");
 
-            //auto update year in footer
+
+            /*=====================================
+                  INFINITE TESTIMONIAL SLIDER
+            =====================================*/
+
+            const track = document.querySelector(".testimonial-track");
+            const cards = [...document.querySelectorAll(".testimonial-card")];
+
+            const prevBtn = document.querySelector(".testimonial-prev");
+            const nextBtn = document.querySelector(".testimonial-next");
+
+            const visibleCards = 3;
+            const gap = 30;
+
+            let index = visibleCards;
+            let autoPlay;
+
+            /*==============================
+                    CLONE CARDS
+            ==============================*/
+
+            const firstCards = cards.slice(0, visibleCards);
+            const lastCards = cards.slice(-visibleCards);
+
+            firstCards.forEach(card => {
+
+                const clone = card.cloneNode(true);
+
+                track.appendChild(clone);
+
+            });
+
+            lastCards.reverse().forEach(card => {
+
+                const clone = card.cloneNode(true);
+
+                track.insertBefore(clone, track.firstChild);
+
+            });
+
+            /*==============================
+                  ALL CARDS AFTER CLONING
+            ==============================*/
+
+            const allCards = document.querySelectorAll(".testimonial-card");
+
+            /*==============================
+                    UPDATE POSITION
+            ==============================*/
+
+            function updatePosition(animated = true){
+
+                const cardWidth = allCards[0].offsetWidth + gap;
+
+                track.style.transition = animated ? ".6s ease" : "none";
+
+                track.style.transform =
+                    `translateX(-${index * cardWidth}px)`;
+
+            }
+
+            /* Initial Position */
+
+            window.addEventListener("load",()=>{
+
+                updatePosition(false);
+
+            });
+
+            /*==============================
+                    NEXT
+            ==============================*/
+
+            function nextSlide(){
+
+                index++;
+
+                updatePosition();
+
+            }
+
+            /*==============================
+                    PREVIOUS
+            ==============================*/
+
+            function prevSlide(){
+
+                index--;
+
+                updatePosition();
+
+            }
+
+            nextBtn.addEventListener("click",nextSlide);
+
+            prevBtn.addEventListener("click",prevSlide);
+
+            /*==============================
+                  INFINITE LOOP
+            ==============================*/
+
+            track.addEventListener("transitionend",()=>{
+
+                if(index >= cards.length + visibleCards){
+
+                    index = visibleCards;
+
+                    updatePosition(false);
+
+                }
+
+                if(index < visibleCards){
+
+                    index = cards.length + visibleCards - 1;
+
+                    updatePosition(false);
+
+                }
+
+            });
+
+            /*==============================
+                    AUTOPLAY
+            ==============================*/
+
+            function startAutoPlay(){
+
+                autoPlay = setInterval(nextSlide,5000);
+
+            }
+
+            function stopAutoPlay(){
+
+                clearInterval(autoPlay);
+
+            }
+
+            startAutoPlay();
+
+            const slider = document.querySelector(".testimonial-slider");
+
+            slider.addEventListener("mouseenter",stopAutoPlay);
+
+            slider.addEventListener("mouseleave",startAutoPlay);
+
+            /*==============================
+                  WINDOW RESIZE
+            ==============================*/
+
+            window.addEventListener("resize",()=>{
+
+                updatePosition(false);
+
+            });
+
+            /*==============================
+                  FOOTER YEAR
+            ==============================*/
 
             document.getElementById("year").textContent =
             new Date().getFullYear();
@@ -779,10 +908,8 @@
         // floating WhatsApp
 
         </script>
-            <a href="https://wa.me/919216799667"
-            class="whatsapp-float"
-            target="_blank">
-            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/919216799667" class="whatsapp-float" target="_blank">
+                <i class="fab fa-whatsapp"></i>
             </a>
     </body>
 </html>
