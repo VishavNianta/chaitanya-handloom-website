@@ -24,7 +24,7 @@ h1,h2,h3{
 /* section title */
 
 section{
-    padding:90px 8px;
+    padding:90px 8%;
 }
 
 .section-title{
@@ -88,6 +88,55 @@ section{
 
 .section-title:hover h2{
     letter-spacing:2px;
+}
+
+/*=========================================
+        GLOBAL RESPONSIVE
+=========================================*/
+
+@media (max-width:992px){
+
+.section-title h2{
+    font-size:50px;
+}
+
+.section-title p{
+    font-size:18px;
+}
+
+}
+
+@media (max-width:768px){
+
+.section-title{
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:38px;
+}
+
+.section-title p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.section-title::after{
+    width:90px;
+}
+
+}
+
+@media (max-width:576px){
+
+.section-title h2{
+    font-size:30px;
+}
+
+.section-title p{
+    font-size:15px;
+}
+
 }
 
 
@@ -229,6 +278,59 @@ section{
 }
 .nav-links li{
     list-style:none;
+}
+
+@media(max-width:992px){
+
+.nav-container{
+
+    padding:0 20px;
+}
+
+.nav-links{
+
+    gap:18px;
+}
+
+.nav-links a{
+
+    font-size:15px;
+}
+
+.nav-btn{
+
+    padding:10px 18px;
+}
+
+.logo img{
+
+    height:48px;
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+
+    display:none;
+}
+
+.nav-btn{
+
+    display:none;
+}
+
+.nav-container{
+
+    justify-content:center;
+}
+
+.logo img{
+
+    height:52px;
+}
+
 }
 
 /* Hero */
@@ -474,6 +576,59 @@ section{
     
 }
 
+@media(max-width:768px){
+
+.hero{
+
+    min-height:100vh;
+
+    text-align:center;
+}
+
+.hero-content{
+
+    align-items:center;
+
+    max-width:100%;
+}
+
+.hero p{
+
+    font-size:16px;
+}
+
+.hero-button{
+
+    justify-content:center;
+}
+
+.whatsapp-btn{
+
+    width:100%;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+    font-size:2.2rem;
+}
+
+.hero-tag{
+
+    font-size:11px;
+}
+
+.btn{
+
+    width:100%;
+    text-align:center;
+}
+
+}
+
 /* About Section */
 
 .about{
@@ -530,6 +685,8 @@ section{
     flex-wrap:wrap;
 }
 }
+
+
 
 /* WHY CHOOSE US */
 
@@ -640,6 +797,24 @@ section{
     transition:.4s;
 }
 
+@media(max-width:768px){
+
+.stat-card{
+
+    padding:30px 20px;
+}
+
+.stat-card h3{
+
+    font-size:38px;
+}
+
+.stat-card p{
+
+    font-size:16px;
+}
+
+}
 
 /* OFFER SECTION */
 
@@ -822,6 +997,32 @@ section{
 
 .featured-offer:hover{
     transform:translateY(-10px);
+}
+
+}
+
+@media(max-width:768px){
+
+.offer-card{
+
+    min-height:auto;
+
+    padding:30px 22px;
+}
+
+.offer-badge{
+
+    position:static;
+
+    margin-bottom:20px;
+}
+
+.offer-icon{
+
+    width:70px;
+    height:70px;
+
+    font-size:28px;
 }
 
 }
@@ -1085,6 +1286,19 @@ section{
     line-height:1.7;
 }
 
+@media(max-width:768px){
+
+.services-grid{
+
+    grid-template-columns:1fr;
+}
+
+.service-card{
+
+    padding:28px;
+}
+
+}
 
 /*Steps to works*/
 .how-it-works{
@@ -1197,6 +1411,25 @@ section{
 }
 .step-card:hover h3{
     color:#c9a85c;
+}
+
+@media(max-width:768px){
+
+.process-line{
+
+    display:none;
+}
+
+.steps-grid{
+
+    grid-template-columns:1fr;
+}
+
+.step-card{
+
+    padding:30px 25px;
+}
+
 }
 
 /*======================================================
@@ -1353,6 +1586,20 @@ section{
     .brand-hero-btn{
         padding:14px 28px;
     }
+
+}
+
+@media(max-width:768px){
+
+.brand-card{
+
+    padding:28px;
+}
+
+.brand-card img{
+
+    width:140px;
+}
 
 }
 
@@ -1644,6 +1891,48 @@ section{
     background:#c8a96a;
 }
 
+@media(max-width:992px){
+
+.arrival-slide{
+
+    grid-template-columns:1fr;
+}
+
+.arrival-image{
+
+    height:380px;
+}
+
+.arrival-content{
+
+    padding:40px;
+}
+
+}
+
+@media(max-width:576px){
+
+.arrival-content{
+
+    padding:30px 22px;
+}
+
+.arrival-content h2{
+
+    font-size:34px;
+}
+
+.arrival-prev,
+.arrival-next{
+
+    width:48px;
+    height:48px;
+
+    font-size:18px;
+}
+
+}
+
 /*======================================================
                     PRODUCTS HERO
 ======================================================*/
@@ -1872,6 +2161,20 @@ section{
 
 .category-card:hover span i{
     transform:translateX(6px);
+}
+
+@media(max-width:768px){
+
+.category-grid{
+
+    grid-template-columns:1fr;
+}
+
+.category-card img{
+
+    height:220px;
+}
+
 }
 
 /*=========================================
@@ -2297,22 +2600,6 @@ section{
 }
 
 /*==============================
-        QUOTE ICON
-==============================*/
-
-.quote-icon{
-
-    position:absolute;
-
-    top:30px;
-    right:30px;
-
-    font-size:42px;
-
-    color:rgba(200,169,106,.15);
-}
-
-/*==============================
         STARS
 ==============================*/
 
@@ -2432,6 +2719,25 @@ section{
 
 }
 
+@media(max-width:576px){
+
+.testimonial-card{
+
+    padding:25px;
+}
+
+.client-avatar{
+
+    width:55px;
+    height:55px;
+}
+
+.client-header h4{
+
+    font-size:18px;
+}
+
+}
 /*=========================================
             CONTACT SECTION
 =========================================*/
@@ -3130,6 +3436,56 @@ section{
 .footer-social{
     justify-content:center;
 }
+}
+
+@media(max-width:768px){
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+    text-align:center;
+}
+
+.footer-column h3::after{
+
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+.footer-social{
+
+    justify-content:center;
+}
+
+.contact-item{
+
+    justify-content:center;
+}
+
+.footer-timing{
+
+    white-space:normal;
+}
+
+}
+
+@media(max-width:576px){
+
+.whatsapp-float{
+
+    width:55px;
+    height:55px;
+
+    font-size:26px;
+
+    right:18px;
+    bottom:18px;
+}
+
 }
 
 
